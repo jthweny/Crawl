@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crawl — Privacy Policy</title>
+<style>
+  :root{ --bg:#f6f6f4; --card:#ffffff; --ink:#22242a; --soft:#5c6066; --edge:#e5e5e0; --accent:#3b3d43; }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#2f3136; --card:#3b3d43; --ink:#f0f0ee; --soft:#b6b9bf; --edge:#4a4c53; --accent:#e8e8e4; }
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing:antialiased; }
+  main{ max-width:720px; margin:0 auto; padding:48px 22px 80px; }
+  .brand{ font-size:14px; font-weight:700; letter-spacing:.4px; color:var(--soft); text-decoration:none; }
+  h1{ font-size:32px; line-height:1.2; margin:10px 0 4px; }
+  .date{ color:var(--soft); font-size:14px; margin-bottom:34px; }
+  h2{ font-size:20px; margin:36px 0 10px; }
+  p, li{ color:var(--ink); }
+  .lead{ color:var(--soft); }
+  ul{ padding-left:22px; }
+  strong{ font-weight:650; }
+  a{ color:inherit; text-underline-offset:2px; }
+  footer{ margin-top:56px; padding-top:18px; border-top:1px solid var(--edge);
+    color:var(--soft); font-size:14px; display:flex; gap:16px; flex-wrap:wrap; }
+  footer a{ color:inherit; }
+</style>
+</head>
+<body>
+<main>
+  <a class="brand" href="./">crawl</a>
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective date: July 6, 2026</p>
+
+  <p class="lead">Crawl (“we”, “us”) is an iOS app that builds small, live apps from
+  your prompts. This policy explains what data we handle, why, and what control
+  you have. The short version: we store only what the product needs to work, we
+  don’t run ads, we don’t track you across apps, and we never sell your data.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Account.</strong> You sign in with Apple. We receive a unique user
+  identifier and your email address (which may be Apple’s private relay address
+  if you chose “Hide My Email”). You also give the app a display name, used only
+  to greet you.</p>
+  <p><strong>Your content.</strong> Your chats with Crawl, the apps it builds for
+  you, and any preferences or custom instructions you save. These are stored on
+  our servers so your work follows your account.</p>
+  <p><strong>Credit and purchases.</strong> Your credit balance, a usage ledger of
+  what each AI request cost, and records of credit top-ups you buy. Payments are
+  processed entirely by Apple — we never see your payment details, only Apple’s
+  transaction identifier and the product purchased.</p>
+  <p><strong>What we don’t collect.</strong> No advertising identifiers, no
+  analytics profiles, no contacts, no browsing history.</p>
+
+  <h2>Device features (camera, microphone, location)</h2>
+  <p>Apps you build in Crawl can ask to use your camera, your location, or your
+  microphone’s loudness level. Each use is gated behind the standard iOS
+  permission prompt (plus an extra in-app consent for apps that came from a
+  share link). The data is handed to the app you built on your device. It is not
+  stored on our servers. The microphone skill senses loudness only — audio is
+  never recorded or transmitted.</p>
+
+  <h2>AI processing</h2>
+  <p>Your prompts and the app being edited are sent to our servers and relayed to
+  an AI model provider (via OpenRouter) to generate a response. This processing
+  is ephemeral: providers act as processors to service the request. We do not
+  use your content to train models.</p>
+
+  <h2>Sharing</h2>
+  <p>If you create a share link for a chat, a snapshot of that chat (and its app)
+  becomes retrievable by anyone with the link, and recipients can fork a private
+  copy into their own account. You can revoke a share link at any time; revoking
+  stops new access, but copies already forked belong to their recipients.
+  Sharing is entirely optional — nothing is shared unless you create a link.</p>
+
+  <h2>Service providers</h2>
+  <ul>
+    <li><strong>Apple</strong> — sign-in and payment processing.</li>
+    <li><strong>Supabase</strong> — database and backend hosting (account, content, credit data).</li>
+    <li><strong>OpenRouter</strong> — AI model routing (prompt and app content, ephemerally).</li>
+    <li><strong>Public data APIs</strong> (weather, dictionaries, and similar) —
+      receive only the query parameters the app you built sends (for example,
+      coordinates for a weather lookup), never your identity.</li>
+  </ul>
+
+  <h2>Retention and deletion</h2>
+  <p>We keep your data while your account exists. You can delete your account at
+  any time in the app: <strong>Settings → Profile → Delete account</strong>.
+  This permanently removes your account, profile, chats, built apps, share
+  links, usage history, and any remaining credit. Purchase records are kept in
+  anonymised form (no longer linked to you) for fraud prevention and financial
+  record-keeping.</p>
+
+  <h2>Security</h2>
+  <p>Data travels over TLS. On device, session tokens live in the iOS Keychain.
+  Server-side, per-user row-level security isolates each account’s data, and AI
+  provider keys never ship inside the app.</p>
+
+  <h2>Children</h2>
+  <p>Crawl is not directed at children under 13, and we do not knowingly collect
+  data from them.</p>
+
+  <h2>Changes</h2>
+  <p>If we make material changes to this policy, we’ll update this page and the
+  effective date, and note the change in the app or release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:support@crawlai.app">support@crawlai.app</a></p>
+
+  <footer>
+    <a href="./">Crawl</a>
+    <a href="./terms">Terms of Use</a>
+  </footer>
+</main>
+</body>
+</html>
